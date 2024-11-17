@@ -1,0 +1,28 @@
+.footer-style-2 {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-style-2 .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    color: #f0c040; /* Warna ikon */
+}
+
+.contact-info p:hover .icon {
+    color: #ff9f00; /* Warna hover untuk ikon */
+}

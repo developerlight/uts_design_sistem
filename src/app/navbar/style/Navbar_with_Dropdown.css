@@ -1,0 +1,38 @@
+.dropdown-navbar {
+    background-color: #222;
+    padding: 10px;
+}
+
+.dropdown-navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown-navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+}
+
+.dropdown-navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown-navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-navbar .dropdown-content a {
+    display: block;
+    color: white;
+    padding: 8px;
+}
+
+.dropdown-navbar .dropdown-content a:hover {
+    background-color: #555;
+}

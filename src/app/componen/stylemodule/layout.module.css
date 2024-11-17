@@ -1,37 +1,171 @@
 /* components/Layout.module.css */
+
 .layout {
     display: flex;
-    min-height: 100vh; /* Full height of the viewport */
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.sidebar {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 100;
 }
 
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar nav ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar nav ul li a {
-    color: white;
-    text-decoration: none;
+.logo {
+    display: flex;
+    align-items: center;
+    color: #f1f1f1;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-.sidebar nav ul li a:hover {
-    text-decoration: underline;
+.logo img {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.burgerLine {
+    width: 25px;
+    height: 3px;
+    background-color: #f1f1f1;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    .navItems {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1f2937;
+        padding: 20px 0;
+        /* Sesuaikan padding jika perlu */
+        transition: max-height 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navOpen {
+        display: flex;
+        max-height: 300px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* Pastikan elemen dropdown juga memiliki style responsif */
+    .dropdown {
+        position: static;
+        /* Ubah posisi menjadi statis */
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+        background-color: #374151;
+        border-radius: 8px;
+        box-shadow: none;
+        /* Hapus shadow agar rapi */
+        z-index: 1;
+        min-width: 100%;
+    }
+
+    .dropdown li {
+        padding: 8px 16px;
+    }
+
+    .navItems ul {
+        flex-direction: column;
+        /* Menu menjadi kolom saat mobile */
+        width: 100%;
+    }
+
+    .navItems ul li {
+        margin: 10px;
+        background-color: #4b5563;
+        padding: 5px 2px;
+        border-radius: 5px;
+        /* Hapus margin */
+        width: 100%;
+    }
+}
+
+.navItems ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navItems ul li {
+    margin-right: 20px;
+}
+
+.navItems ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navItems ul li a:hover {
+    color: #3b82f6;
+}
+
+/* Dropdown styling */
+.dropdownContainer {
+    position: relative;
+}
+
+.dropdown {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #374151;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 150px;
+}
+
+.dropdown li {
+    padding: 8px 16px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    display: block;
+    width: 100%;
+}
+
+.dropdown li a:hover {
+    background-color: #4b5563;
+    color: #fff;
 }
 
 .main {
     flex-grow: 1;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #f0f4f8;
 }

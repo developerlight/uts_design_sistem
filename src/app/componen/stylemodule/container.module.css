@@ -7,36 +7,21 @@
     text-decoration-color: black;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ddd; /* Border default */
+    border: 2px solid #ddd;
+    /* Border default */
 }
 
-/* Modifier for different sizes */
-.container--kecil {
-    max-width: 600px;
-    padding: 5px;
-    border: 2px solid red; /* Border untuk menandakan ukuran kecil */
+.box {
+    margin-bottom: 20px;
 }
 
-.container--medium {
-    max-width: 900px;
-    padding: 5px;
-    border: 2px solid blue; /* Border untuk menandakan ukuran medium */
-}
 
-.container--large {
-    max-width: 1200px;
-    padding: 5px;
-    border: 2px solid green; /* Border untuk menandakan ukuran besar */
-}
-
-.container--xlarge {
-    max-width: 1500px;
-    padding: 5px;
-    border: 2px solid orange; /* Border untuk menandakan ukuran sangat besar */
-}
-
-.container--xxlarge {
-    max-width: 1800px;
-    padding: 5px;
-    border: 2px solid purple; /* Border untuk menandakan ukuran extra besar */
+.nametag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: black;
 }

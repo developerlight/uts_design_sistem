@@ -1,12 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f9fa; /* Soft light gray */
+  --foreground: #4a4a4a; /* Soft dark gray */
+  --accent: #a6b1e1; /* Soft lavender */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #2d2d2d; /* Soft dark gray */
+    --foreground: #d3d3d3; /* Soft light gray */
+    --accent: #8fa3bf; /* Soft blue-gray */
   }
 }
 
@@ -31,7 +33,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration: none;
 }
 

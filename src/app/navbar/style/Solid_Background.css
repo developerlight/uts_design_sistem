@@ -1,0 +1,14 @@
+.solid-navbar {
+    background-color: #000;
+    padding: 15px;
+  }
+  .solid-navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .solid-navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  

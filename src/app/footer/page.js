@@ -1,22 +1,26 @@
 import Layout from '../componen/layout'
 import styles from '../componen/stylemodule/container.module.css';
-import Navbar_1 from './componen/Navbar_with_Dropdown';
-import Navbar_2 from './componen/Navbar_with_Search';
-import Navbar_3 from './componen/Solid_Background';
+import Footer_1 from './componen/footer_content';
+import Footer_2 from './componen/footer_contact';
+import Footer_3 from './componen/footer_link';
+import Footer_4 from './componen/footer_resources';
 
 const Page = () => {
     return (
         <Layout>
             <div className={styles.container}>
-                <h1 className={styles.nametag}>Navbar Component</h1>
+                <h1 className={styles.nametag}>Footer Component</h1>
                 <div className={styles.box}>
-                <Navbar_1 />
+                <Footer_1 />
                 </div>
                 <div className={styles.box}>
-                <Navbar_2 />
+                <Footer_2 />
                 </div>
                 <div className={styles.box}>
-                <Navbar_3 />
+                <Footer_3 />
+                </div>
+                <div className={styles.box}>
+                <Footer_4 />
                 </div>
             </div>
         </Layout>
